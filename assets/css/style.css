@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+
+    font-family: 'Arial', 'sans-serif';
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+main {
+    height: 100vh;
+    
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+
+#main, #information {
+   display: flex;
+}
+
+#main {
+    height: 100%;
+    margin-left: 10rem;
+    width: 100%;
+    z-index: 2;
+    
+    align-items: center;
+    position: relative;
+
+    user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+#main p {
+    margin-top: 2rem;
+}
+
+#information {
+    /* border-radius needs to be after box shadow */
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(40, 40, 40, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(40, 40, 40, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(40, 40, 40, 0.75);
+    border-radius:5px 0 0 5px;
+
+    height: 80%;
+    right:-40rem;
+    top:7.5rem;
+    width: 60rem;
+    z-index: 3;
+    
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+#information:hover {
+    right:0;
+}
+
+#ide-nav {
+    background-color: #21222C;
+    color: #ffffff;
+    width: 30rem;
+    
+    border-radius: inherit;
+
+    user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
+#ide-nav-heading {
+    padding: 0.5rem;
+}
+
+.ide-nav-item {
+    padding:0.5rem 0rem;
+
+    display: flex;
+    /* border: #ffffff solid 1px; */
+}
+
+.ide-nav-item:hover {
+    background-color: #343644;
+
+    cursor: pointer;
+}
+
+.ide-nav-item > i {
+    padding:0rem 0.5rem;
+}
+
+#ide-body{
+    background-color: #191A21;
+    color: #ffffff;
+    padding: 0.5rem;
+    
+    font-family: 'Cascadia Code', 'sans-serif';
+}
+
+#ide-body::selection {
+    background: #ffffff40;
+}
+
+#ide-body::-moz-selection {
+    background: #ffffff40;
+}
