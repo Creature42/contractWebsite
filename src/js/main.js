@@ -9,6 +9,7 @@ $(document).click(function() {
 });
 
 $('#ide-nav').contextmenu(function(e) {
+    $('#ide-body-menu').hide();
     $('#ide-nav-menu').show().css({
         left: e.pageX,
         top: e.pageY
@@ -16,9 +17,9 @@ $('#ide-nav').contextmenu(function(e) {
 });
 
 $('#ide-body').contextmenu(function(e) {
+    $('#ide-nav-menu').hide();
     $('#ide-body-menu').show().css({
         left: e.pageX,
         top: e.pageY
     });
 });
-
