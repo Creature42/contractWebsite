@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <main class="parallax-wrap">
+    <div class="parallax-wrap">
         <span value="1">
             <code>
                 10110011 00000111 01011110 00101110 00010101 11100111 11010100 10001000 01001011 11001010 11100100 10011010 <br>
@@ -38,54 +38,62 @@
                 10110011 000111 01011110 00101110 00010101 11100111 11010100 10001000 01001011 <br>
                 10110011 000111 01011110 00101110 00010101 11100111 11010100 10001000 <br>
                 10110011 000111 01011110 00101110 00010101 11100111 <br>
-          
             </code>
         </span>
+    </div>
+    <div id="ide-nav-menu" style="display: none;">
+        hello
+    </div>
+    
+    <div id="ide-body-menu" style="display:none;">
+        another hello
+    </div>
 
-                <p class="small-text">
-                    Designed by Willem Russ-Hofmans
-                </p>
-
-
-        <section id="main">
-            <div>
-                <h1>Willem <br> Russ-Hofmans</h1>
-                <p>Full Stack Software Engineer</p>
-            </div>
-        </section>
+    <main id="main">
+        <div>
+            <h1>Willem <br> Russ-Hofmans</h1>
+            <p>Full Stack Software Engineer</p>
+        </div>
     </main>
 
-    <aside>
-        <section id="information">
-            <div id="ide-nav">
-                <div id="ide-nav-heading">
-                    <p class="small-text">Solution Explorer</p>
-                </div>
+    <aside id="ide">
+        <div id="ide-nav">
+            <section id="ide-nav-heading">
+                <p class="small-text">Solution Explorer</p>
+            </section>
 
-                <div id="ide-nav-body">
-                    <div class="ide-nav-item">
-                        <i class="devicon-csharp-plain-wordmark colored"></i>
-                        Services.cs
-                    </div>
-                    <div class="ide-nav-item">
-                        <i class="devicon-csharp-plain-wordmark colored"></i>
-                        Projects.cs
-                    </div>
-                    <div class="ide-nav-item">
-                        <i class="devicon-csharp-plain-wordmark colored"></i>
-                        Contact.cs
-                    </div>
+            <div id="ide-nav-body">
+                <div class="ide-nav-item">
+                    <i class="devicon-csharp-plain-wordmark colored"></i>
+                    Services.cs
+                </div>
+                <div class="ide-nav-item">
+                    <i class="devicon-csharp-plain-wordmark colored"></i>
+                    Projects.cs
+                </div>
+                <div class="ide-nav-item">
+                    <i class="devicon-csharp-plain-wordmark colored"></i>
+                    Contact.cs
                 </div>
             </div>
+        </div>
 
-            <div id="ide-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio amet doloribus in ipsa non facere vero,
-                quis quia! Ea suscipit totam quod vero nisi similique iste est consectetur veniam vel.
-            </div>
+        <div id="ide-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio amet doloribus in ipsa non facere vero,
+            quis quia! Ea suscipit totam quod vero nisi similique iste est consectetur veniam vel.
+        </div>
 
-        </section>
 
     </aside>
+    <footer>
+        <p id="copyright">&copy; 2022 Willem Russ-Hofmans</p>
+
+        <p id="created-by">
+            Designed by Willem Russ-Hofmans
+        </p>
+    </footer>
+
+
     <script src="src/js/main.js"></script>
     <script src="src/js/animations.js"></script>
 </body>

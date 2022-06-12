@@ -1,5 +1,5 @@
-document.addEventListener("mousemove", parallax);
-function parallax(event) {
+// paralex binary
+$(document).mousemove(function (event) {
   this.querySelectorAll(".parallax-wrap span").forEach((shift) => {
     const position = shift.getAttribute("value");
     const x = (window.innerWidth - event.pageX * position) / 90;
@@ -7,4 +7,5 @@ function parallax(event) {
 
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
-}
+});
+
