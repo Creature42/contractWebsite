@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willem Russ-Hofmans</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/paralex.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -41,12 +46,22 @@
             </code>
         </span>
     </div>
+
     <div id="ide-nav-menu" style="display: none;">
-        hello
+        <p id="open-cli">Open Intergated Terminal</p>
     </div>
-    
+
     <div id="ide-body-menu" style="display:none;">
         another hello
+    </div>
+
+    <div id="cli" style="display: none;">
+        <div id="cli-header">
+            Willems Terminal
+        </div>
+        <div id="cli-body">
+            >
+        </div>
     </div>
 
     <main id="main">
@@ -80,12 +95,20 @@
         </div>
 
         <div id="ide-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio amet doloribus in ipsa non facere vero,
-            quis quia! Ea suscipit totam quod vero nisi similique iste est consectetur veniam vel.
+            <div>
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio amet doloribus in ipsa non facere vero,
+                quis quia! Ea suscipit totam quod vero nisi similique iste est consectetur veniam vel.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur recusandae quibusdam sit. Veritatis dolore, qui corrupti eius corporis magnam eveniet rem libero rerum. Fugiat amet consectetur fugit omnis mollitia! Ad.
+                Sequi quia repellendus doloremque ratione ad mollitia, amet quaerat quo cupiditate totam a praesentium odio similique minima distinctio sunt laboriosam adipisci alias excepturi iste. Dolore nesciunt fugit eaque laboriosam architecto.
+                Officiis aspernatur laudantium voluptatum dolor. Nisi vel itaque omnis accusamus molestias enim eum minus, veritatis facilis similique ducimus nesciunt alias unde quam natus mollitia consequatur vitae ipsum repellendus. Ut, quo!
+                Similique, ad minus. Minus eveniet officiis dicta! Nisi est dolor quos reprehenderit natus consectetur quo dolores provident maxime dignissimos in, deserunt ab enim? Ipsam, reprehenderit quos voluptate odio dolorum in.
+                Doloribus ducimus, voluptatum debitis laboriosam excepturi voluptas commodi vitae. Eveniet molestiae odit fuga illo eligendi vel aperiam? Ducimus, illo. Atque nisi ex accusamus qui beatae veniam sed dolor eligendi repellat.
+            </div>
+            <div id="cli-anchor"></div>
         </div>
-
-
     </aside>
+
     <footer>
         <p id="copyright">&copy; 2022 Willem Russ-Hofmans</p>
 

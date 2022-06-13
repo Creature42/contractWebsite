@@ -82,7 +82,7 @@ body {
     position: absolute;
 }
 
-#ide-body-menu:hover, 
+#ide-body-menu:hover,
 #ide-nav-menu:hover {
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ body {
 #ide-nav {
     background-color: #21222C;
     color: #ffffff;
-    width: 30rem;
+    width: 15rem;
 
     border-radius: inherit;
     user-select: none;
@@ -152,8 +152,9 @@ body {
 #ide-body {
     background-color: #191A21;
     color: #ffffff;
-    padding: 0.5rem;
-
+    padding: 1rem;
+    position: relative;
+    width: 45rem;
 
     font-family: 'Cascadia Code', 'sans-serif';
 }
@@ -164,6 +165,37 @@ body {
 
 #ide-body::-moz-selection {
     background: #ffffff40;
+}
+
+#cli-anchor {
+    height: 10rem;
+    
+}
+
+#cli {
+    color: #ffffff;
+    height: 5rem;
+    width: 60rem;
+    z-index: 3;
+
+    position: absolute;
+}
+
+#cli-header {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.73);
+}
+
+#cli-body {
+    background: rgba(0, 0, 0, 0.73);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    height: 100%;
+    padding-left: 1rem;
+
+    font-family: 'Cascadia Code', 'sans-serif';
 }
 
 

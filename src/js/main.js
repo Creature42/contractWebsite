@@ -23,3 +23,25 @@ $('#ide-body').contextmenu(function(e) {
         top: e.pageY
     });
 });
+
+// terminal 
+
+// TODO get the cli to move with the body
+// TODO get the cli to stay at the bottom of the body
+// TODO get input on the cli
+$('#open-cli').click(function(){
+    $('#cli').toggle();
+});
+
+const anchor = $('#cli-anchor');
+var position = anchor[0].getBoundingClientRect();
+
+$('#cli').css({
+    height: position.height,
+    left: position.left,
+    top: position.top,
+
+})
+
+$('#cli').resizable().draggable();
+
