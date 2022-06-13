@@ -184,6 +184,16 @@ body {
 #cli-header {
     padding: 1rem;
     background: rgba(0, 0, 0, 0.73);
+
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#close-cli {
+    cursor: pointer;
 }
 
 #cli-body {

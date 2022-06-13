@@ -30,8 +30,12 @@ $('#ide-body').contextmenu(function(e) {
 // TODO get the cli to stay at the bottom of the body
 // TODO get input on the cli
 $('#open-cli').click(function(){
-    $('#cli').toggle();
+    $('#cli').show();
 });
+
+$('#close-cli').click(function(){
+    $('#cli').hide();
+})
 
 const anchor = $('#cli-anchor');
 var position = anchor[0].getBoundingClientRect();
